@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://img.icons8.com/color/480/porsche.png" type="image/xicon">
+    <title>Porsche Middle East - Dr. Ing. h.c. F. Porsche AG</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  
+<style>
+    
+    .img_price_btn1{
+        position: absolute;
+    bottom: 70px;
+    left: 50px;
+    max-width: 250px;
+   max-height: 90px;
+    font-size: 26px;
+    font-weight: 900;
+    color: black;
+    background: white;
+    font-family: unset;
+    border:none;
+    }
+    .lists{
+        color:rgb(85, 84, 84)
+    }
+    .link_porsche{
+
+        position: absolute;
+        bottom: 0px;
+        color:white;
+        font-weight: bolder;
+
+
+    }
+    .link_porsche:hover{
+        color: red;
+    }
+    .social_media_icon{
+        width: 80px;
+    
+    position: absolute;
+    bottom: 2px;
+    right: 15px;
+   }
+   .social_media_icon:hover{
+    background-color: lightblue;
+   }
+   .unorder_list{
+    list-style: none;
+    font-size: 32px;
+    line-height: 65px;
+   }
+    .footer{
+        height: 900px;
+    }
+   
+        
+    
+    .img_price_btn1:hover{
+        background-color: red;
+        color: white;
+    }
+    .shopping_head{
+        position: absolute;
+        bottom: 20px;
+        color: white;
+    }
+    
+    .shopping_head:hover{
+        color: red;
+    }
+
+</style>
+   
+</head>
+<body>
+ 
+   <div class="container-fluid">
+    <div class="row ">
+    <div class="col-xl-3 pe-5 h-100"style="">
+        <div class="logoContainer m-auto border"style="width:300px;height:280px;background:white">
+        <a class="" href="#">
+       <img class="logo h-50 ps-4 mt-5" src="data:image/png;base64,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" alt="">
+    </a>
+</div>
+    </div>
+    <div class="col-xl-6 mt-5 m-auto">
+        <a class="" href="#">
+        <button class="btn m-auto"  style="font-weight:bold;font-size:20px" >
+        <img class="" style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/718.jpg" alt="">
+            <br> 718
+            
+    </button>   
+</a>
+<a href="#">
+    <button class="btn m-auto"style="font-weight:bold;font-size:20px">
+        <img class="" style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/911.jpg" alt="">
+        <br> 911
+    </button>
+</a>
+     
+
+   
+    <a href="#">
+    <button class="btn m-auto "style="font-weight:bold;font-size:20px">
+    
+        <img class=""style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/taycan.jpg" alt="">
+        <br> Taycan
+
+    </button>
+</a>
+
+      
+
+    <a href="#"> 
+    
+    <button class="btn m-auto"style="font-weight:bold;font-size:20px">
+        <img class=""style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/panamera.jpg" alt="">
+        <br> Panamera
+    </button>
+</a>
+
+<a href="#">      
+ 
+   <button class="btn m-auto"style="font-weight:bold;font-size:20px">
+        <img class=""style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/macan.jpg" alt="">
+        <br> Macan
+    </button>
+</a>
+      
+ 
+    <a href="#">
+    <button class="btn m-auto"style="font-weight:bold;font-size:20px">
+        <img class=""style="width: 180px;" src="https://nav.porsche.com/00BC524/series-assets/1366/cayenne.jpg" alt="">
+     <br> Cayenne
+    </button>
+</a>
+    </div>
+    
+
+    <div class="col-xl-3 m-auto">
+       <a href="#">
+        <button class="btn m-auto col-xl-4 h-100 w-25  ms-5  m-auto btn-light" style="font-size:30px ;">
+            <img class="w-25 " src="https://img.icons8.com/external-smashingstocks-detailed-outline-smashing-stocks/344/external-handbag-festivals-and-events-smashingstocks-detailed-outline-smashing-stocks.png" alt=""> Shop
+           
+        </button>
+    </a>
+    <a href="#">
+        <button class="btn m-auto col-xl-4 h-100 w-25 mt-3 ms-1 m-auto btn-light" style="font-size:30px ;">
+        <img class="w-25" src="https://img.icons8.com/ios/344/marker--v1.png" alt="">Dealer
+        </button>
+    </a>
+    <a href="#">
+       
+        <button class="btn m-auto col-xl-4 h-100 w-25 mt-3 ms-1 m-auto btn-light" style="font-size:30px ;">
+            <img class="w-25" src="https://img.icons8.com/material-sharp/344/menu-2.png" alt="">
+            </button>
+        </a>
+    </div>
+
+    <br>
+
+
+
+
+
+
+   
+<div class="col-xl-12 m-auto">
+  
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <div id="carouselExampleIndicators" class="carousel slide float-start" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="#">
+                <img class="d-block w-100" src="https://wallpaperaccess.com/full/361329.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="w-100 "style="font-size:70px;">Porsche India.</h1>
+                    <p class="w-100 float-start"style="font-size:30px;">Know of our Porsche Center network in India</p>
+                </a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="#">
+                <img class="d-block w-100" src="https://wallpaperaccess.com/full/361331.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Time is precious.</h1>
+                    <p class="w-100 float-start"style="font-size:30px;">The 911 GT3.</p>
+                </a>
+                </div>
+            </div>
+            <a href="#">
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://wallpaperaccess.com/full/634049.jpg" alt="Third slide">
+            </a>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+
+
+</div>
+
+    
+
+    <div class="col-xl-12 ">
+        <h1 class="p-5 " style="font-size: 60px; font-weight:bold">Models</h1>
+    </div>
+    <div class="col-xl-4 col-sm-12">
+
+        
+
+    
+        <img class="w-100 h-100"style="position: relative;" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/718/5632/1581578133187/front-left-side-47.jpg?imwidth=420&impolicy=resize" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">718</h1>
+        <h2 style="position: absolute;top: 65px;color: white;">from INR 13,669,000</h2>
+        
+        <a href="#"><button class="img_price_btn1  " style="position: absolute;" class="img_price_btn1" >Build Your Own</button></a>
+       
+       </div>
+
+
+
+    <div class="col-xl-4">
+        <img class="w-100 h-100"style="position: relative;" src="https://stimg.cardekho.com/images/carexteriorimages/630x420/Porsche/911/8718/Porsche-911-GT3-with-Touring-Package/1642402319549/front-left-side-47.jpg?tr=w-110" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">911</h1>
+        <h2 style="position: absolute;top: 65px; color:white">from INR 17,251,000</h2>
+        <a href="#"><button class="img_price_btn1 "style="position: absolute;" >Build Your Own</button></a>
+       
+    </div>
+
+
+
+    <div class="col-xl-4">
+        <img class="w-100 h-100"style="position: relative;" src="https://wallpapercave.com/wp/wp4311943.jpg" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">Tycan</h1>
+        <h2 style="position: absolute;top: 65px;color: white;">from INR 15,302,000</h2>
+        <a href="#"><button class="img_price_btn1 " style="position: absolute;">Build Your Own</button></a>
+       
+    </div>
+
+
+    <div class="col-xl-4">
+        <img class="w-100 h-100" style="position: relative;" src="https://www.hdwallpapers.in/download/porsche_panamera_gts_2020_2_4k_5k_hd_cars-HD.jpg" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">Panamera</h1>
+        <h2 style="position: absolute;top: 65px;color: white;">from INR 15,804,000</h2>
+        <a href="#"><button class="img_price_btn1 " style="position: absolute;">Build Your Own</button></a>
+       
+    </div>
+
+
+
+
+    <div class="col-xl-4">
+        <img class="w-100 h-100" style="position:relative ;" src="https://wallpaperaccess.com/full/1848111.jpg" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">Macan</h1>
+        <h2 style="position: absolute;top: 65px;color: white;">from INR 8,321,000</h2>
+        <a href="#"><button class="img_price_btn1 " style="position: absolute;">Build Your Own</button></a>
+       
+    </div>
+
+
+    <div class="col-xl-4">
+        <img class="w-100 h-100"style="position: relative;" src="https://c4.wallpaperflare.com/wallpaper/818/379/715/porsche-cayenne-s-hd-computer-desktop-wallpaper-preview.jpg" alt="">
+        <h1 style="position: absolute;top: 20px;color: white;">Cayenne</h1>
+        <h2 style="position: absolute;top: 65px;color: white;">from INR 12,684,000</h2>
+        <a href="#"><button class="img_price_btn1  " style="position: absolute;">Build Your Own</button></a>
+        
+    </div>
+
+
+    <div class="col-xl-12">
+        <p class="p-5" style="font-size: 25px;">* European specifications shown below. Market specific values to be confirmed upon homologation.</p>
+    </div>  
+
+
+    <div class="col-xl-12">
+        <h1 class="p-5 " style="font-size: 60px; font-weight:bold">Find a Porsche near you</h1>
+    </div>
+
+
+   
+
+
+
+
+
+
+    <div class="col-xl-4">
+       <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-718/normal/db4be0ec-f8f4-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+       <button class="w-50  m-auto"style="font-size:40px;background:black;color:white;">Find 718 Models</button>
+    </div>
+    <div class="col-xl-4">
+        <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-911/normal/e7c2070d-f8f4-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+        <button class="w-50 m-auto "style="font-size:40px;background:black;color:white;">Find 911 Models</button>
+    </div>
+    <div class="col-xl-4">
+        <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-taycan/normal/253ef544-f8f5-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+        <button class="w-75 m-auto"style="font-size:40px;background:black;color:white;">Find Taycan Models</button>
+    </div>
+    <div class="col-xl-4">
+        <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-panamera/normal/19092f4b-f8f5-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+        <button class="w-75 m-auto "style="font-size:40px;background:black;color:white;">Find Panamera Models</button>
+    </div>
+    <div class="col-xl-4">
+        <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-macan/normal/0355d78f-f8f5-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+        <button class="w-75 m-auto"style="font-size:40px;background:black;color:white;">Find Macan Models</button>
+    </div>
+    <div class="col-xl-4">
+        <img class="w-100" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-icc-cayenne-e3/normal/ef4d48a8-f8f4-11eb-80db-005056bbdc38;sP;twebp/porsche-normal.webp" alt="">
+        <button class="w-75 m-auto"style="font-size:40px;background:black;color:white;">Find Cayenne Models</button>
+    </div>
+
+
+    <div class="col-xl-12">
+        <h1 class="p-5 " style="font-size: 60px; font-weight:bold">Shopping Tools</h1>
+    </div>
+   
+      
+        <div class="col-xl-5"style="height:600px ">
+            <a href="#">
+            <img class="w-100 h-100" style="position:relative ;" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-compare/normal/4365f64f-2c10-11e7-9f74-0019999cd470;sO;twebp/porsche-normal.webp" alt="">
+            <h1 class="shopping_head ms-5">Compare</h1>
+        </a>
+        </div>
+       <div class="col-xl-3"style="height:600px ">
+        <a href="#">
+            <img class="w-100 h-100" style="position:relative ;" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-dealersearch/normal/c365840c-687b-11e7-9717-0019999cd470;sR;twebp/porsche-normal.webp" alt="">
+            <h1 class="shopping_head ms-5" >Locate a dealer</h1>
+        </a>
+    </div>
+        <div class="col-xl-2"style="height:600px ">
+            <a href="#">
+            <img class="w-100 h-100" style="position:relative ;" src="https://files.porsche.com/filestore/image/middle-east/none/homepage-teaser-shoppingtools-pds/normal/94ab936b-9704-11e7-b591-0019999cd470;sR;twebp/porsche-normal.webp" alt="">
+            <h1 class="shopping_head ms-5">Porsche Lifestyle</h1>
+        </a>
+        </div>
+        <div class="col-xl-2"style="height:600px ">
+            <a href="#">
+            <img class="w-100 h-100" style="position:relative ;" src="https://files.porsche.com/filestore/image/multimedia/none/homepage-teaser-shoppingtools-kontakt/normal/df7cfdaf-9790-11e7-b591-0019999cd470;sR;twebp/porsche-normal.webp" alt="">
+            <h1 class="shopping_head ms-5" >Contact Us</h1>
+        </a>
+        </div>
+
+        <div class="col-xl-12">
+            <h1 class="p-5 " style="font-size: 60px; font-weight:bold">Porsche Social</h1>
+        </div>
+        
+            <div class="col-xl-6">
+            <a href="#">
+                <img class="w-100 h-100" style="position: relative;" src="https://pbs.twimg.com/media/BRu0h3ICEAAh1OT.jpg" alt="">
+                <img class="social_media_icon" src="https://img.icons8.com/ios/344/twitter--v1.png" alt="">
+            </a>
+        </div>
+        <div class="col-xl-6">
+            <a href="#">
+                <img class="w-100 h-100"style="position: relative;" src="https://cimg2.ibsrv.net/ibimg/hgm/946x532-1/100/379/porsche-cayman-s-celebrates-2-million-porsche-facebook-fans_100379002.jpg" alt="">
+                <img class="social_media_icon " src="https://img.icons8.com/sf-ultralight/344/facebook.png" alt="">
+
+            </a>
+            
+
+        </div>
+
+        <div class="col-xl-12">
+            <h1 class=" p-5 " style="font-size: 60px; font-weight:bold">Discover</h1>
+        </div>
+        <div class="col-xl-3">
+          <a href="#">  <img class="w-100 h-100"style="position:relative;" src="https://files.porsche.com/filestore/image/multimedia/none/rd-2019-homepage-teaser-ww-roadsbyporsche-kw23/normal/8127be1d-81f3-11e9-80c4-005056bbdc38;sM;twebp/porsche-normal.webp" alt="">
+            <p class="link_porsche p-5" style="font-size: 25px;">The Scenic Routing Community by Porsche.</p>
+        </a>
+        </div>
+        <div class="col-xl-3">
+            <a href="#"><img class="w-100 h-100"style="position:relative;" src="https://files.porsche.com/filestore/image/multimedia/none/rd-2022-homepage-teaser-ww-pds-porschelifestyle-kw22/normal/585df047-db34-11ec-80ef-005056bbdc38;sM;twebp/porsche-normal.webp" alt="">
+            <p class="link_porsche p-5" style="font-size: 25px;">Porsche Lifestyle.</p>
+        </a>
+        </div>
+        <div class="col-xl-3">
+          <a href="#">  <img class="w-100 h-100"style="position:relative;" src="https://files.porsche.com/filestore/image/multimedia/none/rd-2019-homepage-teaser-pof-porschefinder-kw45/normal/f26ec9e6-fb09-11e9-80c6-005056bbdc38;sM;twebp/porsche-normal.webp" alt="">
+            <p class="link_porsche p-5" style="font-size: 25px;">Porsche Finder.</p>
+        </a>
+        </div>
+        <div class="col-xl-3">
+            <a href="#"><img class="w-100 h-100"style="position:relative;" src="https://files.porsche.com/filestore/image/multimedia/none/rd-2017-homepage-teaser-ww-soundsystem-kw41/normal/b9961392-aa7c-11e7-b591-0019999cd470;sM;twebp/porsche-normal.webp" alt="">
+            <p class="link_porsche p-5" style="font-size: 25px;">The Porsche Sound Systems.</p>
+        </a>
+        </div>
+       
+
+
+
+        
+        <div class="footer col-xl-3 ">
+            <h1 class="p-5" style="font-size: 60px; font-weight:bold">Build & Find</h1>
+            <ul class="unorder_list ">
+                <br>
+            <a href="#">
+                <li class="lists ps-5">Build your Porsche</li>
+            </a>
+            <a href="#">
+                <li class="lists ps-5">Compare Models</li>
+            </a>
+            <a href="#">
+                <li class="lists ps-5">Search Pre-Owned</li>
+            </a>
+            <a href="#">
+                <li class="lists ps-5"> Find your Porsche Center</li>
+            </a>
+            <a href="#">
+                <li class="lists ps-5">Download the model range catalogue</li>
+            </a>
+            
+            </ul>
+</div>
+
+
+<div class="footer col-xl-3 ">
+    <h1 class="p-5" style="font-size: 60px; font-weight:bold">Online Services</h1>
+    <ul class="unorder_list ">
+    <a href="#">
+        <li class="lists ps-5">Porsche Login</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Sign up for News</li>
+    </a>
+    
+    </ul>
+</div>
+
+
+
+<div class="footer col-xl-3 ">
+    <h1 class="p-5" style="font-size: 60px; font-weight:bold">Behind the Scenes</h1>
+    <ul class="unorder_list ">
+    <a href="#">
+        <li class="lists ps-5">Passion Motorsports</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Porsche Experience</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Porsche Classic</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Visit Porsche Museum</li>
+    </a>
+  
+    
+    </ul>
+</div>
+
+
+
+<div class="footer col-xl-3 "> 
+    <h1 class="p-5" style="font-size: 60px; font-weight:bold">Porsche Company</h1>
+    <ul class="unorder_list ">
+    <a href="#">
+        <li class="lists ps-5">Latest News</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">At a Glance</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Job & Careers</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Contact & Information</li>
+    </a>
+    <a href="#">
+        <li class="lists ps-5">Christophorus-The Porsche Magzine</li>
+    </a>
+    
+    </ul>
+
+</div>
+
+
+</div>
+
+
+   </div>
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>    
+    
+</body>
+</html>
